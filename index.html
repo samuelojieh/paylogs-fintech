@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <title>Paylogs | Your Money, Your Control</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 7%;
+      border-bottom: 1px solid #203149;
+    }
+    .logo { font-size: 27px; font-weight: 800; }
+    .logo span { color: #25d69a; }
+    button, .btn {
+      border: 0;
+      border-radius: 10px;
+      padding: 13px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .primary { background: #25d69a; color: #071426; }
+    .secondary { background: transparent; border: 1px solid #52627a; color: white; }
+    .hero { padding: 85px 7% 60px; max-width: 1000px; }
+    .tag { color: #25d69a; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(40px, 8vw, 70px); line-height: 1.08; margin: 20px 0; }
+    .description { color: #aab8ca; font-size: 18px; line-height: 1.7; max-width: 600px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      padding: 25px 7% 70px;
+    }
+    .card {
+      background: #10233b;
+      border: 1px solid #263b56;
+      border-radius: 17px;
+      padding: 25px;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { color: #aab8ca; line-height: 1.6; }
+    .wallet { color: #25d69a; font-size: 27px; font-weight: bold; }
+    .notice { color: #f4c66a !important; font-size: 12px; }
+    footer {
+      padding: 30px 7%;
+      border-top: 1px solid #203149;
+      color: #8292a8;
+      text-align: center;
+    }
+    @media(max-width: 600px) {
+      header { padding: 18px 5%; }
+      .hero { padding: 65px 5% 40px; }
+      .services { padding: 20px 5% 50px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">PAY<span>LOGS</span></div>
+    <button class="primary" onclick="alert('Customer registration is coming soon!')">
+      Get Started
+    </button>
+  </header>
+
+  <section class="hero">
+    <div class="tag">YOUR MONEY. YOUR CONTROL.</div>
+    <h1>Payments made simple. Your finances in control.</h1>
+    <p class="description">
+      Welcome to Paylogs. A digital financial platform
+      designed to help individuals and businesses manage
+      payments and financial transactions in Nigeria.
+    </p>
+    <div class="actions">
+      <button class="primary" onclick="alert('Registration coming soon!')">
+        Create Account
+      </button>
+      <button class="secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        Explore Services
+      </button>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="card">
+      <h3>💳 Digital Wallet</h3>
+      <p>Manage your wallet and view your account balance.</p>
+      <div class="wallet">₦0.00</div>
+      <p class="notice">DEMO DISPLAY — NOT A REAL ACCOUNT BALANCE</p>
+    </div>
+    <div class="card">
+      <h3>🏦 Bank Transfers</h3>
+      <p>Access bank transfer and withdrawal services through supported providers.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Airtime & Data</h3>
+      <p>Access airtime and data payment services.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Electricity</h3>
+      <p>Pay electricity bills through supported payment partners.</p>
+    </div>
+    <div class="card">
+      <h3>🏢 Business Payments</h3>
+      <p>Manage business payments and payment links.</p>
+    </div>
+    <div class="card">
+      <h3>📊 Transaction History</h3>
+      <p>Keep track of your financial activity and receipts.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Paylogs. All rights reserved.
+    <p>Designed for Nigeria 🇳🇬</p>
+  </footer>
+</body>
+</html>
